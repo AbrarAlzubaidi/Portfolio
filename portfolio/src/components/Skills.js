@@ -1,6 +1,14 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
+import { Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import "react-multi-carousel/lib/styles.css";
+
+import arrow from '../assets/images/arrow1.svg'
 
 export const Skills = () => {
     const responsive = {
@@ -32,7 +40,7 @@ export const Skills = () => {
                             </h2>
                             <p>Aute nulla in culpa laborum.Aute nulla in culpa laborum.Aute nulla in culpa laborum.Aute nulla in culpa laborum.</p>
                         </div>
-                        <Carousel responsive={responsive} infinite={true} className="skill-slider">
+                        {/* <Carousel responsive={responsive} infinite={true} className="skill-slider">
                             <div className="item">
                                 <img src={} alt=''/>
                             </div>
@@ -46,7 +54,82 @@ export const Skills = () => {
                                 <img src={} alt=''/>
                             </div>
                             
-                        </Carousel>
+                        </Carousel> */}
+                        <Swiper
+                            direction={"vertical"}
+                            spaceBetween={30}
+                            centeredSlides={true}
+                            autoplay={{
+                                delay: 2500,
+                                disableOnInteraction: false,
+                            }}
+                            modules={[Autoplay]}
+                            className="mySwiper"
+                        >
+                            <SwiperSlide>
+                            <Container>
+                                    <Col>
+                                        <Row>
+                                            <div>
+                                                <img className="img-slider" src={arrow} alt='' />
+                                            </div>
+                                        </Row>
+                                        <Row>
+                                            <div>
+                                                <img className="img-slider" src={arrow} alt='' />
+                                            </div>
+                                        </Row>
+                                        <Row>
+                                            <div>
+                                                <img className="img-slider" src={arrow} alt='' />
+                                            </div>
+                                        </Row>
+                                    </Col>
+                                </Container>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <Container>
+                                    <Col>
+                                        <Row>
+                                            <div>
+                                                <img className="img-slider" src={arrow} alt='' />
+                                            </div>
+                                        </Row>
+                                        <Row>
+                                            <div>
+                                                <img className="img-slider" src={arrow} alt='' />
+                                            </div>
+                                        </Row>
+                                        <Row>
+                                            <div>
+                                                <img className="img-slider" src={arrow} alt='' />
+                                            </div>
+                                        </Row>
+                                    </Col>
+                                </Container>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                            <Container>
+                                    <Col>
+                                        <Row>
+                                            <div>
+                                                <img className="img-slider" src={arrow} alt='' />
+                                            </div>
+                                        </Row>
+                                        <Row>
+                                            <div>
+                                                <img className="img-slider" src={arrow} alt='' />
+                                            </div>
+                                        </Row>
+                                        <Row>
+                                            <div>
+                                                <img className="img-slider" src={arrow} alt='' />
+                                            </div>
+                                        </Row>
+                                    </Col>
+                                </Container>
+                            </SwiperSlide>
+                        </Swiper>
                     </Col>
                 </Row>
             </Container>
