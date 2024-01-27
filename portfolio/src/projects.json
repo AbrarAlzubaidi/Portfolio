@@ -1,0 +1,26 @@
+[
+    {
+        "title": "LTUC Website",
+        "description": "School CMS that shows the main information about the school",
+        "img" : "../assets/images/color-sharp2.png",
+        "url" : "https://github.com/LTUC/LTUC-Website"
+    },
+    {
+        "title": "Social Club",
+        "description": "An app to gather people from different places, who have the same interests",
+        "img" : "../assets/images/color-sharp2.png",
+        "url" : "https://github.com/Pygmy-Final"
+    },
+    {
+        "title": "News Beacon",
+        "description": "A news app shows the user some news in different categories from all over the world",
+        "img" : "../assets/images/color-sharp2.png",
+        "url" : "https://github.com/MERN-SPARK"
+    },
+    {
+        "title": "Medical Clinic",
+        "description": "A web page serves the patients who have a common disease without coming to the clinic or hospital.",
+        "img" : "src/assets/images/midical-clinec.png",
+        "url" : "https://sweet-developer.github.io/medical-clinic/"
+    }    
+]
